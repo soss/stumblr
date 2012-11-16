@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <script type="text/javascript">{{jquery}}</script>
+        <style type="text/css">{{css}}</script>
+    </head>
+    <body>
+        <header>
+            <h1>{{title}}</h1>
+            <p>{{description}}</p>
+        </header>
+        <nav>
+            {{> listing}}
+        </nav>
+        <section id="content">
+            {{> content}}
+        </section>
+        {{#footer}}
+        <footer>
+            {{footer}}
+        </footer>
+        {{/footer}}
+    </body>
+</html>

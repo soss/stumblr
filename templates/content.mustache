@@ -1,0 +1,13 @@
+{{#directories}}
+    <article id="content-{{path}}">
+        <header>{{name}}</header>
+        {{description}}
+    </article>
+    {{#directories}}<ul>{{> listing}}</ul>{{/directories}}
+{{#directories}}
+{{#files}}
+    <article id="content-{{path}}">
+        <header>{{name}}</header>
+        {{description}}
+    </article>
+{{/files}}

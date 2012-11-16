@@ -1,0 +1,11 @@
+{{#directories}}
+    <li id="listing-{{path}}">
+        {{name}}
+        <ul>
+            {{#directories}}{{> listing}}{{/directories}}
+        </ul>
+    </li>
+{{#directories}}
+{{#files}}
+    <li id="listing-{{path}}">{{name}}</li>
+{{/files}}
